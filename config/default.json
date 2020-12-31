@@ -1,4 +1,4 @@
 {
-  "db": "mongodb://localhost/productscrud",
+  "db": "mongodb+srv://user:12345@cluster0.n4kmv.mongodb.net/productscrud",
   "jwtPrivateKey": "SomePrivateKey"
 }
