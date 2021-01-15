@@ -31,11 +31,13 @@ const TopMenu = () => {
             Contact Us
           </Link>
         </Typography>
-        <Typography variant="h6">
-          <Link to="/profile" className={classes.link}>
-            Profile
-          </Link>
-        </Typography>
+        {userService.isLoggedIn() && (
+          <Typography variant="h6">
+            <Link to="/profile" className={classes.link}>
+              Profile
+            </Link>
+          </Typography>
+        )}
         {!userService.isLoggedIn() ? (
           <>
             <Typography variant="h6">
